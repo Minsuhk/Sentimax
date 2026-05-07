@@ -1,0 +1,187 @@
+/* Desktop popup styles (for viewports > 1223px) */
+.popup-box-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+.popup-box {
+  position: fixed;
+  top: 50%; /* Centers vertically on large screens */
+  transform: translateY(-50%);
+  right: 1rem; /* Offset from the right edge */
+  width: 600px;
+  height: 550px;
+  padding: 1rem;
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* Keep original design if needed */
+  right: 105%;
+  transition: width 0.5s ease, height 0.5s ease;
+}
+
+.pie-chart-wrapper {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;         /* Centers the container horizontally */
+  display: flex;          /* Use flexbox for alignment */
+  justify-content: center;/* Centers content horizontally */
+  align-items: center;    /* Centers content vertically */
+  transition: max-width 0.5s ease; /* For smooth resizing */
+  transform: scale(1.0);
+  transform-origin: center;
+}
+
+.close-button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f44336;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  background-color: #d32f2f;
+}
+
+/* Mobile/tablet popup styles: for viewports <= 1223px */
+@media (max-width: 1223px) {
+  .popup-box-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    padding: 20px 0;
+    z-index: 10000;
+    overflow-y: auto;
+  }
+  
+  .popup-box {
+    position: absolute;
+    top: 150px !important; /* Align with the right box container */
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow-y: auto !important;
+    transition: width 0.5s ease, height 0.5s ease;
+  }
+}
+
+/* Breakpoints matching your right box dimensions */
+
+/* For very small screens: up to 400px */
+@media (max-width: 400px) {
+  .popup-box {
+    width: 300px !important;
+    height: 400px !important;
+    max-height: 400px !important;
+    padding: 0.5rem !important;
+    top: 0vh !important;
+  }
+}
+
+/* For viewports 401px to 500px */
+@media (min-width: 401px) and (max-width: 500px) {
+  .popup-box {
+    width: 350px !important;
+    height: 450px !important;
+    max-height: 450px !important;
+    top: 0vh !important;
+  }
+}
+
+/* For viewports 501px to 600px */
+@media (min-width: 501px) and (max-width: 600px) {
+  .popup-box {
+    width: 400px !important;
+    height: 500px !important;
+    max-height: 500px !important;
+    top: 0vh !important;
+  }
+}
+
+/* For viewports 601px to 700px */
+@media (min-width: 601px) and (max-width: 700px) {
+  .popup-box {
+    width: 450px !important;
+    height: 550px !important;
+    max-height: 550px !important;
+    top: 0vh !important;
+  }
+}
+
+/* For viewports 701px to 800px */
+@media (min-width: 701px) and (max-width: 800px) {
+  .popup-box {
+    width: 500px !important;
+    height: 600px !important;
+    max-height: 600px !important;
+    top: 0vh !important;
+  }
+}
+
+/* For viewports 801px to 900px */
+@media (min-width: 801px) and (max-width: 900px) {
+  .popup-box {
+    width: 550px !important;
+    height: 650px !important;
+    max-height: 650px !important;
+    top: 0vh !important;
+  }
+}
+
+/* For viewports 901px to 1000px */
+@media (min-width: 901px) and (max-width: 1000px) {
+  .popup-box {
+    width: 600px !important;
+    height: 650px !important;
+    max-height: 650px !important;
+    top: 0vh !important;
+  }
+}
+
+/* For viewports 1001px to 1100px */
+@media (min-width: 1001px) and (max-width: 1100px) {
+  .popup-box {
+    width: 650px !important;
+    height: 650px !important;
+    max-height: 650px !important;
+    top: 0vh !important;
+  }
+}
+
+/* For viewports 1101px to 1223px */
+@media (min-width: 1101px) and (max-width: 1223px) {
+  .popup-box {
+    width: 700px !important;
+    height: 650px !important;
+    max-height: 650px !important;
+    top: 0vh !important;
+  }
+}
