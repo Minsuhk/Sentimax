@@ -38,3 +38,52 @@ templates/
 
 *.cpython-311.pyc
 *.cpython-312.pyc
+
+# Virtual environment
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment variables
+.env
+
+# VSCode
+.vscode/
+
+# Mac/Windows junk
+.DS_Store
+Thumbs.db
+
+# Python build files
+build/
+dist/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ML model checkpoints
+*.h5
+*.keras
+*.ckpt
+
+# Logs
+*.log
+
+# Node modules
+node_modules/
+
+# OCR/temp files
+tmp/
+temp/
+
+# TensorBoard
+logs/
+
+# PyTorch cache
+*.pt
+*.pth

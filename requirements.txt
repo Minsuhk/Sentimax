@@ -4,9 +4,12 @@ pytesseract
 pillow
 matplotlib
 pandas
-numpy
+numpy==1.26.4
 easyocr
 joblib
 emoji
 scikit-learn==1.4.2
 tensorflow==2.16.1
+torch==2.2.2
+torchvision==0.17.2
+torchaudio==2.2.2
