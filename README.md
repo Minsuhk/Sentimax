@@ -20,11 +20,14 @@
     →if you need lazy loading, use React Intersection Observer
 
 ## How to Use
-1) Make sure the current directory is `Sentimax`
-2) Make sure that all necessary libraries are installed (sklearn, flask, etc)
-3) Navigate to the `flask_backend.py` file and run it 
-4) Change the current directory to `react-vite-app` 
-5) Type into the terminal `npm run dev`
-6) Open the link that appears in the terminal
-7) Website is now usable
-8) After having the results pop up, make sure to close it before trying a different set of text
+1) Make sure the current directory is `Sentimax-Deep-Learning-V1`
+2) Enter the virtual environment: `.\venv\Scripts\activate`
+3) Install the required libraries: `pip install -r requirements.txt`
+4) Run the Flask backend: `python flask_backend.py`
+5) Open a new terminal
+6) Navigate to the frontend folder: `cd react-vite-app`
+7) Run the frontend: `npm run dev`
+8) Open the localhost link that appears in the terminal
+9) To stop the project:
+   - Press `Ctrl + C` in both terminals
+   - Type `deactivate` to exit the virtual environment
